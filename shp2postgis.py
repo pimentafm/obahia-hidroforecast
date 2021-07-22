@@ -17,7 +17,7 @@ DB_PORT = os.environ.get("PORT")
 DATABASE_PASSWORD = os.environ.get("PASSWORD")
 
 engine = create_engine(
-    "postgresql://geonode:uppQAOFa@guapore.dea.ufv.br:5432/obahia")
+    "postgresql://geonode:PASSWORD@HOST:PORT/DATABASE")
 stations = gpd.read_file(
     'shapefile/estacoes_telemetricas.shp', encoding='utf-8')
 
